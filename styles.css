@@ -7,7 +7,8 @@ body {
     background-color: #085321;
     color: #EDFFF5;
     background-image: url("images/asia-street-unsplash.jpg");
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*header*/
@@ -15,30 +16,35 @@ body {
 header {
     position: fixed;
     width: 100%;
+    height: 5rem;
     background-color: #010F06;
-    display: grid;
-    grid-template-areas: 2fr 1fr / 1fr 2fr 3fr;
-    justify-content: center;
+    display: flex;
+    white-space: nowrap;
     align-items: center;
 }
 
-header img {
-    grid-area: 1 / 1 / 3 / 2;
+.logo {
+    height: 5rem;
+    justify-content: left;
 }
 
-header h1 {
-   grid-area: 1 / 2 / 2 / 3;
-   font-family: 'Kaushan', cursive;
+.name {
+    font-family: 'Kaushan Script', cursive;
+    line-height: 0.8;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    justify-content: left;
 }
 
-header h4 {
-    grid-area: 2 / 2 / 3 / 3;
+.name h4 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.2;
 }
 
-nav {
-    grid-area: 1 / 3 / 3 / 4;
-    font-family: 'Kaushan', cursive;
-    justify-content: right;
+.nav-link {
+    font-family: 'Kaushan Script', cursive;
+    color: #EDFFF5;
+    margin: 0.5rem;
 }
 
 /*main*/
@@ -65,11 +71,17 @@ nav {
 
 /*staff*/
 
-.staff-section {
+#staff-section {
 
 }
 
 .staff-member {
+
+}
+
+/*contact*/
+
+#contact {
 
 }
 

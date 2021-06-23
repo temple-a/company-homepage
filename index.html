@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 
-<html>
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css" type="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Yubaba's Bath House</title>
   </head>
 
+<html>
   <body>
     <header>
-      <img src="images/coin-kanji.png" alt="coin kanji">
-      <h1>Yubaba's Bath House</h1>
-      <h4>Refuge of the Spirits</h4>
+      <img class="logo" src="images/coin-kanji.png" alt="coin kanji">
+      <div class="name">
+        <h1>Yubaba's Bath House</h1>
+        <h4>Refuge of the Spirits</h4>
+      </div>
       <nav>
-        <p><a href=".contact"></a>Contact</p>
-        <p><a href=".staff-section"></a>Meet Our Staff</p>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#staff-section">Meet Our Staff</a>
       </nav>
     </header>
 
     <main>
-      <div class="container">
-        <img src="images/bathe-kanji.png" alt="bathe kanji">
-        <h4>Baths</h4>
+      <div class="container baths">
+        <div class="container-heading">
+          <img src="images/bathe-kanji.png" alt="bathe kanji">
+          <h4>Baths</h4>
+        </div>
         <p>Our spiritual baths are open to all spirits who need cleansing, revitalising, rejuvenating. 
           Our boiler is coal fed and supplemented by hot springs. Thousands of herbs and bath salts available
           to suit every spiritual need.</p>
       </div>
-      <div class="container">
-        <img src="images/tea-kanji.png" alt="tea kanji">
-        <h4>Sustenance</h4>
+      <div class="container sustenance">
+        <div class="container-heading">
+          <img src="images/tea-kanji.png" alt="tea kanji">
+          <h4>Sustenance</h4>
+      </div>
         <p>Delicacies to sustain every appetite. Every flavour and taste, 
           from street food to dishes to tempt an Emperor of spirits. Thousands of teas and tea blends. 
           Hundreds of sake varieties. Our unlimited supply will awaken and satisfy every craving.</p>
       </div>
-      <div class="container">
-        <img src="images/spirit-kanji.png" alt="spirit kanji">
-        <h4>Our Spiritual Precept</h4>
+      <div class="container spirit">
+        <div class="container-heading">
+          <img src="images/spirit-kanji.png" alt="spirit kanji">
+          <h4>Our Spiritual Precept</h4>
+        </div>
         <p>Here at the spiritual threshold, we turn no one away who is in need. No cleansing job is beyond our highly sought 
           skills. However we are a for-profit concern and reserve the right to divert non-paying customers to less well-travelled
           spiritual paths. No humans. Gold in hand accepted.</p>
         </p>
       </div>
 
-      <div class="staff-section">
+      <div id="staff-section">
         <div class="staff-member">
           <img class="staff-photo" src="images/yubaba-skull.jpg" alt="Bath house owner Yubaba">
           <p><strong>Yubaba</strong> is the esteemed proprietor of Yubaba's Bath House. She represents the covetous, controlling, 
@@ -65,6 +74,10 @@
           <p><strong>Kamaji</strong> the boiler man is at the heart of the bath house, supplying heat, water, and bath additives
           on demand. He is synonymous with work and his many arms allow him to multitask constantly.</p>
         </div>
+      </div>
+
+      <div id="contact">
+        <p>Send messages to Bathhouse of the Spirits, The Bridge, Spiritual Threshold, The Spirit World. Follow us on spirit world social media @yubabasdomain.</p>
       </div>
 
     </main>
