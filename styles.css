@@ -1,5 +1,6 @@
 html {
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     background-image: url("images/asia-street-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /*header*/
@@ -21,11 +23,11 @@ header {
     display: flex;
     white-space: nowrap;
     align-items: center;
+    justify-content: left;
 }
 
 .logo {
     height: 5rem;
-    justify-content: left;
 }
 
 .name {
@@ -33,18 +35,40 @@ header {
     line-height: 0.8;
     margin-left: 1rem;
     margin-right: 2rem;
-    justify-content: left;
 }
 
 .name h4 {
     font-family: 'Open Sans', sans-serif;
     line-height: 0.2;
+    font-weight: 400;
+}
+
+nav {
+    flex-shrink: 2;
 }
 
 .nav-link {
     font-family: 'Kaushan Script', cursive;
     color: #EDFFF5;
     margin: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 10rem;
+    }
+
+    .logo {
+        height: 10rem;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    nav {
+        display: none;
+    }
 }
 
 /*main*/
