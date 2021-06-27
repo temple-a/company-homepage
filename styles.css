@@ -67,16 +67,15 @@ main {
 
 .service {
     display: grid;
-    grid-template: 1fr 2fr / repeat(4, 2fr);
+    grid-template: 1fr 2fr / 1fr repeat(3, 2fr);
+    column-gap: 10px;
     align-items: center;
     padding: 1rem;
 }
 
 .container-heading {
-    opacity: 100%;
     font-family: 'Kaushan Script', cursive;
     grid-area: 1 / 2 / 2 / 4;
-    margin-left: 0.5rem;
 }
 
 .kanji {
@@ -97,14 +96,14 @@ main {
     top: 6rem;
     margin: 1rem;
     height: 4rem;
-    width: 24rem;
     align-items: center;
     background-color: rgba(237, 255, 245, 50%);
 }
 
 .subsection h2 {
-    margin-left: 1rem;
+    font-family: 'Kaushan Script', cursive;
     color:#010F06;
+    padding-left: 1rem;
 }
 
 .staff {
@@ -131,6 +130,7 @@ main {
 
 .contact {
     margin: 1rem;
+    padding: 1rem;
 }
 
 
@@ -138,6 +138,7 @@ main {
 
 footer {
     position: relative;
+    top: 6rem;
     font-size: 0.6rem;
     line-height: 1;
     width: 100%;
@@ -176,8 +177,12 @@ footer {
         flex-wrap: wrap;
     }
 
-    .container, .subsection {
+    .container {
         width: 80%;
+    }
+
+    .subsection {
+        width: 90%;
     }
 
     .staff-photo {
