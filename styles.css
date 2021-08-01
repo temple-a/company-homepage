@@ -162,12 +162,13 @@ footer {
         display: none;
     }
 
-    .contact {
+    #contact {
         display: none;
     }
 
-    .staff {
+    #staff {
         display: none;
+        flex-wrap: wrap;
     }
 
 }
@@ -191,7 +192,8 @@ footer {
     }
 
     .staff-member {
-        font-size: 12px;
+        font-size: 16px;
+        width: 80%;
     }
 }
 
