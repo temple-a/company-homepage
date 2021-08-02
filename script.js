@@ -19,7 +19,5 @@ function toggleContact() {
     }
 }
 
-if (window.screen.availWidth < 600) {
-    staffKanji.addEventListener('click', toggleStaff);
-    contactKanji.addEventListener('click', toggleContact);
-}
+staffKanji.addEventListener('click', toggleStaff);
+contactKanji.addEventListener('click', toggleContact);
